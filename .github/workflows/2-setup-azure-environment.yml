@@ -48,9 +48,6 @@ jobs:
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
-    permissions:
-      contents: read/write
-      pull-requests: read/write
 
     steps:
       # We'll need to check out the repository so that we can edit the README
