@@ -18,6 +18,10 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'stage')
 
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read/write
+      pull-requests: read/write
 
     steps:
       - uses: actions/checkout@v1
